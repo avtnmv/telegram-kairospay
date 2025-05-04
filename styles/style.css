@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+}
+.wrapper {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #EFEEF4;
+
+    min-height: 100dvh; 
+}
+.content-header{
+    width: 400px;
+    background-image: url(../assets/images/header-background-image.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.logo{
+    margin-top: 36px;
+    margin-bottom: 10px;
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+}
+.subscribers-number{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #9ECBF5;
+}
+.content-main{
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 14.5px;
+    padding-top: 8.5px;
+    background-color: #fff;
+    padding-bottom: 18px;
+    margin-bottom: 16px;
+}
+.link-title, .telegram-link{
+    font-size: 14px;
+    font-weight: 300;
+}
+.telegram-link{
+    display: block;
+    color: #1578EF;
+    margin-bottom: 15px;
+}
+.hr{
+    height: 1px;
+    width: 100%;
+    background-color: #EFEEF4;
+    margin-bottom: 15px;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.description-title{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.button-container{
+    width: 400px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding-top: 16.5px;
+    padding-bottom: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.telegram-button{
+    color: #fff;
+    background-color: #007AFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+    width: 376px;
+    border-radius: 5px;
+}
+.alert{
+    font-size: 12px;
+    color: #909090;
+    font-weight: 300;
+}
+
+.shine-animation{
+    background-image: linear-gradient(270deg, rgba(100, 181, 239, 0) 48.44%, #87c3eb 75.52%, rgba(100, 181, 239, 0) 100%);
+    background-repeat: no-repeat;
+    animation: bg-move linear 3s infinite;
+}
+
+@-webkit-keyframes bg-move {
+    0%   { background-position: -500px 0; }
+    100% { background-position: 1000px 0; }
+  }
+
+@keyframes bg-move {
+    0%   { background-position: -500px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+@media (max-width: 480px) {
+    .content-header{
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0px;
+        background-image: url(../assets/images/header-background-mobile.png);
+        margin-bottom: 16px;
+    }
+    .logo{
+        height: 90px;
+        width: 90px;
+        margin-top: 45px;
+    }
+    .title{
+        font-size: 20px;
+        width: 242px;
+        text-align: center;
+    }
+    .subscribers-number{
+        margin-bottom: 10px;
+    }
+    .content-main{
+        width: 340px;
+        padding-left: 11px;
+    }
+    .description-p{
+        width: 302px;
+    }
+    .button-container{
+        width: 340px;
+    }
+    .telegram-button{
+        width: 320px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .content-main{
+        margin-bottom: 24px;
+    }
+  }
